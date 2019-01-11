@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Portfolio" />
+    <meta property="og:site_name" content="Portfolio" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.3.14/vuetify.min.css" rel="stylesheet" />
+    <style>
+      #app { background: #ffff8d }
+      [v-cloak] { display: none }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <v-app v-cloak>
+        <v-toolbar flat dense color="yellow accent-1">
+          <v-spacer></v-spacer>
+          <v-btn disabled icon> <v-icon>more_vert</v-icon> </v-btn>
+        </v-toolbar>
+        <v-content>
+          <v-container fluid fill-height>
+            <v-layout align-center justify-center>
+              <v-flex xs3>
+                <v-card hover ripple href="https://github.com/kitaharata" target="_blank">
+                  <v-img src="https://avatars.githubusercontent.com/kitaharata"></v-img>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-content>
+      </v-app>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.3.14/vuetify.min.js"></script>
+    <script>
+      var vm = new Vue({ el: '#app' });
+    </script>
+  </body>
+</html>
