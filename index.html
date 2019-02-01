@@ -4,28 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
     <title>Portfolio</title>
-    <meta name="description" content="Portfolio" />
+    <meta name="description" content="GitHub" />
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="Portfolio" />
-    <meta property="og:description" content="Portfolio" />
-    <meta property="og:site_name" content="Portfolio" />
+    <meta property="og:description" content="GitHub" />
+    <meta property="og:site_name" content="Portfolio | GitHub" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.3.14/vuetify.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.4.4/vuetify.min.css" rel="stylesheet" />
     <style>
-      #app { background: #ffff8d }
+      #app { background: #ffd180 }
       [v-cloak] { display: none }
     </style>
   </head>
   <body>
     <div id="app">
       <v-app v-cloak>
-        <v-toolbar flat dense color="yellow accent-1">
+        <v-toolbar flat dense color="orange accent-1">
           <v-spacer></v-spacer>
           <v-btn disabled icon> <v-icon>more_vert</v-icon> </v-btn>
         </v-toolbar>
         <v-content>
-          <v-container fluid fill-height>
-            <v-layout align-center justify-center>
+          <v-container>
+            <v-layout justify-center>
               <v-flex xs3>
                 <v-card hover ripple href="https://github.com/kitaharata" target="_blank">
                   <v-img src="https://avatars.githubusercontent.com/kitaharata"></v-img>
@@ -33,13 +33,40 @@
               </v-flex>
             </v-layout>
           </v-container>
+          <v-container>
+            <v-layout>
+              <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
+                <v-card>
+                  <v-list>
+                    <v-list-tile ripple href="https://kitaharata.github.io/tavue/" target="_blank">
+                      <v-list-tile-action>
+                        <v-icon>star</v-icon>
+                      </v-list-tile-action>
+                      <v-list-tile-content>
+                        <v-list-tile-title>TaVue</v-list-tile-title>
+                      </v-list-tile-content>
+                    </v-list-tile>
+                  </v-list>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+          <v-container>
+            <v-layout>
+              <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
+                <v-card>
+                  <v-card-title class="headline">JavaScript Python Go TypeScript Vue.js Konva.js Vuetify axios Ace TensorFlow.js Node.js Express Nuxt.js Bottle C# C++ C VisualBasic Dart Angular Riot phina.js PixiJS</v-card-title>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
         </v-content>
       </v-app>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.3.14/vuetify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.22/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.4.4/vuetify.min.js"></script>
     <script>
-      var vm = new Vue({ el: '#app' });
+      const vm = new Vue({ el: '#app' });
     </script>
   </body>
 </html>
