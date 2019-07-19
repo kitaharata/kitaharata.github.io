@@ -1,0 +1,46 @@
+{
+  "name": "Portfolio",
+  "short_name": "Portfolio",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/64/ffffff/000000?text=Ta",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/120/ffffff/000000?text=Ta",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/144/ffffff/000000?text=Ta",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/152/ffffff/000000?text=Ta",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/192/ffffff/000000?text=Ta",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/384/ffffff/000000?text=Ta",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512/ffffff/000000?text=Ta",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
