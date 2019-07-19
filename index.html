@@ -9,25 +9,26 @@
     <meta property="og:title" content="Portfolio" />
     <meta property="og:description" content="GitHub" />
     <meta property="og:site_name" content="Portfolio | GitHub" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.1/vuetify.min.css" rel="stylesheet" />
-    <style>
-      #app { background: #ffd180 }
-      [v-cloak] { display: none }
-    </style>
+    <link href="manifest.json" rel="manifest" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.7.95/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.0.0-beta.3/vuetify.min.css" rel="stylesheet" />
+    <style>[v-cloak] { display: none }</style>
   </head>
   <body>
     <div id="app">
       <v-app v-cloak>
-        <v-toolbar flat dense color="orange accent-1">
+        <v-app-bar flat dense>
           <v-spacer></v-spacer>
-          <v-btn disabled icon> <v-icon>more_vert</v-icon> </v-btn>
-        </v-toolbar>
+          <v-btn disabled icon>
+            <v-icon>mdi-dots-vertical</v-icon>
+          </v-btn>
+        </v-app-bar>
         <v-content>
           <v-container>
             <v-layout justify-center>
               <v-flex xs3>
-                <v-card hover ripple href="https://github.com/kitaharata" target="_blank">
+                <v-card hover ripple href="https://github.com/kitaharata" rel="noopener noreferrer" target="_blank">
                   <v-img src="https://avatars.githubusercontent.com/kitaharata"></v-img>
                 </v-card>
               </v-flex>
@@ -38,22 +39,22 @@
               <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
                 <v-card>
                   <v-list>
-                    <v-list-tile ripple href="https://kitaharata.github.io/tavue/" target="_blank">
-                      <v-list-tile-action>
-                        <v-icon>star</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>TaVue: Firebase Chat</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile ripple href="https://kitaharata.github.io/tado/" target="_blank">
-                      <v-list-tile-action>
-                        <v-icon>star</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>TaDo: WebStorage ToDo List</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
+                    <v-list-item ripple href="https://kitaharata.github.io/tavue/" target="_blank">
+                      <v-list-item-action>
+                        <v-icon>mdi-star</v-icon>
+                      </v-list-item-action>
+                      <v-list-item-content>
+                        <v-list-item-title>TaVue: Firebase Chat</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
+                    <v-list-item ripple href="https://kitaharata.github.io/tado/" target="_blank">
+                      <v-list-item-action>
+                        <v-icon>mdi-star</v-icon>
+                      </v-list-item-action>
+                      <v-list-item-content>
+                        <v-list-item-title>TaDo: WebStorage ToDo List</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item>
                   </v-list>
                 </v-card>
               </v-flex>
@@ -63,10 +64,12 @@
             <v-layout>
               <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
                 <v-card>
-                  <v-card-title class="headline">JavaScript Python Go TypeScript Vue.js Konva.js</v-card-title>
-                  <v-card-text>JavaScript: Vuetify axios Ace TensorFlow.js Node.js Express Nuxt.js</v-card-text>
-                  <v-card-text>Python: Bottle</v-card-text>
-                  <v-card-text>Old skills: C# C++ C VisualBasic Dart Angular Riot phina.js PixiJS</v-card-text>
+                  <v-card-title>JavaScript TypeScript Python Go PHP C# Ruby Java SQL</v-card-title>
+                  <v-card-text>
+                    JavaScript: Vue.js Konva.js Vuetify axios Ace Monaco TensorFlow.js Node.js Express Nuxt.js<br />
+                    Python: Colaboratory Flask TensorFlow Jupyter<br />
+                    Old skills: C++ C VisualBasic JScript Dart Angular Riot phina.js PixiJS
+                  </v-card-text>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -74,10 +77,12 @@
         </v-content>
       </v-app>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/1.5.1/vuetify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.0.0-beta.3/vuetify.min.js"></script>
     <script>
-      const vm = new Vue({ el: '#app' });
+if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+let vuetify = new Vuetify();
+let vm = new Vue({ el: '#app', vuetify });
     </script>
   </body>
 </html>
