@@ -81,7 +81,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.0.0-beta.3/vuetify.min.js"></script>
     <script>
-if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
 let vuetify = new Vuetify();
 let vm = new Vue({ el: '#app', vuetify });
     </script>
