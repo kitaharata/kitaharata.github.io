@@ -1,91 +1,38 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
     <meta name="description" content="GitHub" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="twitter:card" content="summary" />
     <meta property="og:title" content="Portfolio" />
     <meta property="og:description" content="GitHub" />
     <meta property="og:site_name" content="Portfolio | GitHub" />
-    <link href="/static/favicon.ico" rel="icon" />
-    <link href="/manifest.json" rel="manifest" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.9.55/css/materialdesignicons.min.css" rel="stylesheet" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.4.6/vuetify.min.css" rel="stylesheet" />
-    <style>
-      #app { background: #ffd180 }
-      [v-cloak] { display: none }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
   </head>
   <body>
-    <div id="app">
-      <v-app v-cloak>
-        <v-app-bar flat dense color="orange accent-1">
-          <v-spacer></v-spacer>
-          <v-btn disabled icon><v-icon>mdi-dots-vertical</v-icon></v-btn>
-        </v-app-bar>
-        <v-main>
-          <v-container>
-            <v-layout justify-center>
-              <v-flex xs6 sm4 md3>
-                <v-card hover ripple href="https://github.com/kitaharata" target="_blank">
-                  <v-img src="https://avatars.githubusercontent.com/kitaharata"></v-img>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-          <v-container>
-            <v-layout>
-              <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
-                <v-card>
-                  <v-list>
-                    <v-list-item ripple href="https://kitaharata.github.io/tavue/" target="_blank">
-                      <v-list-item-action>
-                        <v-icon>mdi-star</v-icon>
-                      </v-list-item-action>
-                      <v-list-item-content>
-                        <v-list-item-title>TaVue: Firebase Chat</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item ripple href="https://kitaharata.github.io/tado/" target="_blank">
-                      <v-list-item-action>
-                        <v-icon>mdi-star</v-icon>
-                      </v-list-item-action>
-                      <v-list-item-content>
-                        <v-list-item-title>TaDo: WebStorage ToDo List</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-          <v-container>
-            <v-layout>
-              <v-flex xs12 sm10 md8 offset-sm1 offset-md2>
-                <v-card>
-                  <v-card-title class="headline">JavaScript TypeScript Python Go PHP C# Ruby Java SQL</v-card-title>
-                  <v-card-text>
-                    <div>JavaScript TypeScript: Vue.js Vuetify Nuxt.js Konva.js axios TensorFlow.js Node.js Express Ace Monaco Alpine.js Fastify</div>
-                    <div>Python: Colaboratory Flask TensorFlow SQLAlchemy Jupyter Django FastAPI</div>
-                    <div>Go PHP Ruby: Gin Lumen Laravel Sinatra Rails</div>
-                    <div>Old skills: VisualBasic Dart Angular Riot phina.js PixiJS</div>
-                  </v-card-text>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </v-main>
-      </v-app>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.4.6/vuetify.min.js"></script>
-    <script>
-if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('/sw.js'));
-const vuetify = new Vuetify();
-const vm = new Vue({ el: '#app', vuetify });
-    </script>
+    <main class="container">
+      <article>
+        <a href="https://github.com/kitaharata" rel="me nofollow noopener noreferrer" target="_blank">
+          <img src="https://avatars.githubusercontent.com/kitaharata" alt="Takuro Kitahara" width="480" height="480" />
+        </a>
+      </article>
+      <article>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" alt="Go" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg" alt="Ruby" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scala/scala-original.svg" alt="Scala" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" width="480" height="480" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" alt="SQLite" width="480" height="480" />
+      </article>
+    </main>
   </body>
 </html>
